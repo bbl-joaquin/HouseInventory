@@ -1,0 +1,45 @@
+{
+  "priority": [
+      "lider.cl",
+      "jumbo.cl",
+      "santaisabel.cl",
+      "unimarc.cl",
+      "super.eltit.cl",
+      "acuenta.cl",
+      "tottus.cl",
+      "okmarket.cl",
+
+      "paris.cl",
+      "ripley.cl",
+      "falabella.com",
+      "lapolar.cl",
+      "abcdin.cl",
+      "hites.com",
+      "tricot.cl",
+
+      "pcfactory.cl",
+      "weplay.cl",
+      "spdigital.cl",
+      "winpy.cl",
+      "reifstore.cl",
+
+      "salcobrand.cl",
+      "cruzverde.cl",
+      "farmaciasahumada.cl",
+
+      "mercadolibre.cl",
+      "linio.cl",
+      "amazon.cl",
+      "aliexpress.com",
+
+      "easy.cl",
+      "sodimac.cl",
+      "construmart.cl"
+    ],
+  "blacklist": [
+    "support.google.com",
+    "facebook.com",
+    "youtube.com"
+  ]
+}
+

@@ -5,7 +5,7 @@ PYTHON = python3
 
 # Define the target for running the main script
 run:
-	$(PYTHON) src/main.py 
+	$(PYTHON) -m barcode_lib.main
 	
 # Define the target for running tests
 test:
