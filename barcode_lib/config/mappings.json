@@ -1,8 +1,8 @@
 {
   "modes": {
-    "add": "barcode_lib.handlers.add.AddMode",
     "input": "barcode_lib.handlers.input.InputMode",
     "output": "barcode_lib.handlers.output.OutputMode",
+    "add": "barcode_lib.handlers.add.AddMode",
     "remove": "barcode_lib.handlers.remove.RemoveMode",
     "set": "barcode_lib.handlers.set.SetMode"
   },
@@ -10,7 +10,10 @@
     "0%*": "barcode_lib.states.functions.zero_percent",
     "show": "barcode_lib.states.functions.show",
     "exit": "barcode_lib.states.functions.exit_program",
-    "back": "barcode_lib.states.functions.back"
+    "back": "barcode_lib.states.functions.back",
+    "stock": "barcode_lib.states.functions.stock",
+    "rebuild_stock": "barcode_lib.states.functions.rebuild_stock",
+    "clear_all": "barcode_lib.states.functions.clear_all"
   },
   "configs": {
     "sound on": "barcode_lib.configs.functions.enable_sound",

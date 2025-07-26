@@ -38,4 +38,29 @@ def remove_from_cache(sku: str):
     else:
         print(f"[Remove] SKU {sku} no estaba en el cache.")
 
+def stock(reader):
+    cursor = reader.logger.stock_conn.execute("""
+        SELECT sku, product, brand, category, stock
+        FROM stock
+        ORDER BY stock DESC
+    """)
+    rows = cursor.fetchall()
 
+    print("\n SKU        | PRODUCT                  | BRAND        | CATEGORY     | STOCK")
+    print("------------|---------------------------|--------------|--------------|------")
+    for sku, product, brand, category, stock in rows:
+        print(f"{sku:12s} | {product[:25]:25s} | {brand[:12]:12s} | {category[:12]:12s} | {stock:5d}")
+
+def rebuild_stock(reader):
+    response = input("WARNING: This will rebuild the stock database from scratch based on the log. To confirm scan again the rebuild_stock barcode.").strip().lower()
+    if response == "rebuild_stock":
+        reader.logger.rebuild_stock()
+    else:
+        print("Operation cancelled")
+
+def clear_all(reader):
+    response = input("WARNING: This will delete every log in the database. To confirm scan again the clear_all barcode.").strip().lower()
+    if response == "clear_all":
+        reader.logger.clear_all()
+    else:
+        print("Operation cancelled")
