@@ -1,45 +1,23 @@
 {
-  "priority": [
-      "lider.cl",
-      "jumbo.cl",
-      "santaisabel.cl",
-      "unimarc.cl",
-      "super.eltit.cl",
-      "acuenta.cl",
-      "tottus.cl",
-      "okmarket.cl",
-
-      "paris.cl",
-      "ripley.cl",
-      "falabella.com",
-      "lapolar.cl",
-      "abcdin.cl",
-      "hites.com",
-      "tricot.cl",
-
-      "pcfactory.cl",
-      "weplay.cl",
-      "spdigital.cl",
-      "winpy.cl",
-      "reifstore.cl",
-
-      "salcobrand.cl",
-      "cruzverde.cl",
-      "farmaciasahumada.cl",
-
-      "mercadolibre.cl",
-      "linio.cl",
-      "amazon.cl",
-      "aliexpress.com",
-
-      "easy.cl",
-      "sodimac.cl",
-      "construmart.cl"
-    ],
-  "blacklist": [
-    "support.google.com",
-    "facebook.com",
-    "youtube.com"
-  ]
+  "rate_limit": {
+    "min_delay_seconds": 4.0,
+    "max_retries": 3,
+    "initial_backoff_seconds": 2.0
+  },
+  "priority_domains": [
+    "lider.cl",
+    "jumbo.cl",
+    "paris.cl",
+    "falabella.com",
+    "ripley.cl",
+    "easy.cl",
+    "sodimac.cl",
+    "tottus.cl",
+    "unimarc.cl",
+    "santaisabel.cl",
+    "lapolar.cl",
+    "hites.com"
+  ],
+  "user_agents": [],
+  "cache_ttl_seconds": 86400
 }
-

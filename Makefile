@@ -1,14 +1,13 @@
-# Makefile
-
-# Define the Python interpreter path (usually python3 or python, depending on your system)
-PYTHON = python3
-
-# Define the target for running the main script
+.PHONY: run cli reset test
 run:
-	$(PYTHON) -m barcode_lib.main
-	
-# Define the target for running tests
+	python -m barcode_lib.main
+cli:
+	python -m barcode_lib.main --no-gui
+reset:
+	@read -p "Type 'DELETE ALL' to erase DBs & cache: " ans; \
+	if [ "$$ans" = "DELETE ALL" ]; then \
+	rm -f barcode_lib/db/*.db barcode_lib/web/product_cache.json; \
+	echo "All cleared."; \
+	else echo "Cancelled."; fi
 test:
-	$(PYTHON) -m unittest discover test/
-
-.PHONY: run test
+	python -m unittest discover -s test -p "test_*.py"

@@ -13,7 +13,8 @@
     "back": "barcode_lib.states.functions.back",
     "stock": "barcode_lib.states.functions.stock",
     "rebuild_stock": "barcode_lib.states.functions.rebuild_stock",
-    "clear_all": "barcode_lib.states.functions.clear_all"
+    "clear_all": "barcode_lib.states.functions.clear_all",
+    "info": "barcode_lib.states.functions.info"
   },
   "configs": {
     "sound on": "barcode_lib.configs.functions.enable_sound",
